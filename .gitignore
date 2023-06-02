@@ -1,0 +1,22 @@
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!wp-content/
+!README.md
+!docker-compose.yaml
+!database/
+!.gitignore
+
+# Ignore everything in the "wp-content" directory, except:
+# "mu-plugins" directory, "plugins" directory, "themes" directory
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+
+# Ignore specific themes
+wp-content/themes/twentytwentyone/
+wp-content/themes/twentytwentythree/
+wp-content/themes/twentytwentytwo/
+
+# Ignore node_modules
+node_modules/
