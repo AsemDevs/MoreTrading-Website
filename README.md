@@ -20,3 +20,15 @@ This project is a simple landing page for a trading website. It is built with Wo
 - Tailwind CSS: A utility-first CSS framework for rapidly building custom designs
 - MySQL: Database
 - Docker: Containerization platform
+
+## Installation
+
+- Commands to run:
+
+```bash
+docker-compose up -d // to start the containers
+npm install -D tailwindcss // to install tailwind css
+npx tailwindcss init -p // to create the tailwind.config.js file
+npm run build // to build the tailwind css
+npm run watch // to watch the tailwind css
+```
