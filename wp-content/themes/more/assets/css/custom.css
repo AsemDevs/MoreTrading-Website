@@ -1,0 +1,9 @@
+.hero-section li::before {
+    content: '•';
+    color: #6371F4;
+    display: inline-block;
+    width: 1em;
+    vertical-align: sub;
+    font-size: 2rem;
+    margin-left: 0;
+}
