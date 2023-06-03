@@ -10,13 +10,18 @@
 <body <?php body_class(); ?>>
 
     <?php wp_body_open(); ?>
-    <header class="container mx-auto ">
-        <div class="px-6 py-3 flex justify-between items-center">
+    <header class="container mx-auto">
+        <div class="py-3 flex justify-between items-center">
             <div>
-                <a href="<?php echo site_url(); ?>" class="text-xl font-semibold text-gray-800">More</a>
+                <a href="<?php echo site_url(); ?>" class="font-semibold text-gray-800 flex items-center">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.svg' ?>" alt="More Logo" class="w-22 h-auto mr-2" />
+                    MORE
+                </a>
+
+
             </div>
             <div class="flex items-center">
-                <nav class="nav-menu hidden md:flex space-x-10 mr-4">
+                <nav class="nav-menu hidden md:flex space-x-10 mr-4 text-secondary">
                     <?php wp_nav_menu(array(
                         'theme_location' => 'header-menu',
                         'container' => false,
@@ -24,9 +29,9 @@
                         'fallback_cb' => false // Stops WordPress from generating its own list in case the menu does not exist
                     )); ?>
                 </nav>
-                <div class="flex items-center space-x-3 ">
-                    <a href="#" class="py-2 px-4 font-medium text-white rounded bg-primary hover:bg-gray-700">Log in</a>
-                    <a href="#" class="py-2 px-4 font-medium text-white bg-primary rounded hover:bg-gray-700">Sign Up</a>
+                <div class="flex items-center space-x-3 loginreg">
+                    <a href="#" class="font-medium text-white text-m rounded bg-primary hover:bg-gray-700">Log in</a>
+                    <a href="#" class="font-medium text-white text-m bg-primary rounded hover:bg-gray-700">Sign Up</a>
                 </div>
             </div>
             <div class="flex md:hidden">

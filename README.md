@@ -32,3 +32,9 @@ npx tailwindcss init -p // to create the tailwind.config.js file
 npm run build // to build the tailwind css
 npm run watch // to watch the tailwind css
 ```
+
+## Design
+
+- Total Width is 1920px
+- The Container width is 1536px
+- The container screen percentage is 80% of the view port.

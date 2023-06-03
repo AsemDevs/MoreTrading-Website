@@ -1,9 +1,22 @@
+* {
+    font-family: 'Dongle', sans-serif;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6, p, span, a {
+    font-size: 2rem;
+}
+.hero-section h1 {
+    line-height: 80%;
+}
+header .loginreg a {
+    padding: 7px 29px;
+    border-radius: 8px;
+}
 .hero-section li::before {
-    content: '•';
+    content: url('/wp-content/themes/more/assets/images/bullet.svg');
     color: #6371F4;
     display: inline-block;
-    width: 1em;
-    vertical-align: sub;
-    font-size: 2rem;
-    margin-left: 0;
+    vertical-align: initial;
+    font-size: 3rem;
+    margin-right: 0.5rem;
 }
