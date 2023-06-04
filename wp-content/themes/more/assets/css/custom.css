@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 * {
     font-family: 'Dongle', sans-serif;
     font-size: 16px;
@@ -20,8 +21,13 @@ header .loginreg a {
     margin-right: 0.5rem;
 }
 .our-tools h2 {
-    line-height: 60.37px;
+    line-height: 58.37px;
 }
 .our-tools p {
     font-family: "Inter", sans-serif;
+}
+footer .menu a,
+footer .disclosure p,
+footer .horizontal-links a{
+    font-size: 1.5rem;
 }

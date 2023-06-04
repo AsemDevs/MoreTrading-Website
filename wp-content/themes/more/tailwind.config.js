@@ -20,6 +20,7 @@ module.exports = {
         '4xl': '6rem',
       },
       spacing: {
+        '13': '50px',
         '22': '84px',
       },
       container: {

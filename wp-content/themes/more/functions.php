@@ -12,16 +12,6 @@ function theme_enqueue_styles()
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
-function enqueue_custom_fonts() {
-    // Preconnect to Google Fonts URLs
-    echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
-    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
-
-    // Enqueue Google Fonts CSS
-    wp_enqueue_style( 'custom-fonts', 'https://fonts.googleapis.com/css2?family=Dongle&display=swap' );
-}
-add_action( 'wp_head', 'enqueue_custom_fonts' );
-
 function register_my_menus()
 {
     register_nav_menus(
