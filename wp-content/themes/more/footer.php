@@ -74,10 +74,10 @@
             </div>
         </div>
         <div class="social-icons flex justify-center my-13">
-            <a href="#" class="mx-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="Facebook"></a>
-            <a href="#" class="mx-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.svg" alt="Twitter"></a>
-            <a href="#" class="mx-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="Instagram"></a>
-            <a href="#" class="mx-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.svg" alt="Linkedin"></a>
+            <a href="#" class="mx-2 hover:brightness-125"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="Facebook"></a>
+            <a href="#" class="mx-2 hover:brightness-125"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.svg" alt="Twitter"></a>
+            <a href="#" class="mx-2 hover:brightness-125"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="Instagram"></a>
+            <a href="#" class="mx-2 hover:brightness-125"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.svg" alt="Linkedin"></a>
         </div>
         <div class="disclosure text-white text-m mt-4 font-normal leading-9">
             <p>RISK DISCLOSURE:*The services and information provided by The Bored Traders Club are not directed at citizens or residents in the USA. Additionally, they are not intended for distribution to or used by any individual in any jurisdiction where such distribution would be contrary to local law or regulation.</p>

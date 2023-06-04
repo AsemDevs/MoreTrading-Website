@@ -26,6 +26,10 @@ header .loginreg a {
 .our-tools p {
     font-family: "Inter", sans-serif;
 }
+.our-tools  .feature-div {
+    width: 350px;
+    max-width: 100%;
+}
 footer .menu a,
 footer .disclosure p,
 footer .horizontal-links a{
