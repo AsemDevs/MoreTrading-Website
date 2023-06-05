@@ -21,7 +21,7 @@
                 </a>
             </div>
             <div class="flex items-center">
-                <nav id="menu" class="nav-menu hidden md:flex space-x-10 mr-4 text-secondary">
+                <nav id="menu" class="nav-menu hidden md:flex space-x-10 mr-8 text-secondary">
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'header-menu',

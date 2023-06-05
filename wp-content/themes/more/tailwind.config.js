@@ -22,6 +22,10 @@ module.exports = {
       spacing: {
         '13': '50px',
         '22': '84px',
+        '30': '122px',
+      },
+      scale: {
+        '180': '1.8',
       },
       container: {
         center: true,

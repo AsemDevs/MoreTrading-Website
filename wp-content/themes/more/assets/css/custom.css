@@ -48,7 +48,6 @@ header .loginreg a {
 }
 
 footer .menu a,
-footer .disclosure p,
 footer .horizontal-links a {
     font-size: 1.5rem;
 }
@@ -64,7 +63,7 @@ footer .horizontal-links a {
     color: #251F6E;
 }
 
-.submenu .menu-item a:hover {
+.submenu .menu-item:hover a{
     color: white
 }
 
@@ -106,7 +105,7 @@ li.menu-item-has-children .submenu {
     font-weight: 700;
 }
 
-.down-arrow {
+#menu .down-arrow {
     width: 1rem;
     vertical-align: middle;
     height: 1rem;
@@ -115,27 +114,20 @@ li.menu-item-has-children .submenu {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-#menu-mobile .down-arrow {
-    width: 1rem;
-    margin-top: 1rem;
-    height: 1rem;
-    display: flex;
-    float: right;
-    margin-left: 1.125rem;
-    background-image: url('/wp-content/themes/more/assets/images/down-arrow.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 li.menu-item-has-children>a {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+footer .flex.flex-col .menu-item a {
+    font-size: 1.5rem;
+}
 
 
 @media (max-width: 768px) {
+    .container {
+        min-width: 90vw !important;
+    }
     .submenu {
         background: none;
         position: relative;
@@ -146,6 +138,37 @@ li.menu-item-has-children>a {
         top: 0;
         background-color: white;
         z-index: 10000;
+    }
+    .down-arrow {
+        width: 1rem;
+        margin-top: 1rem;
+        height: 1rem;
+        display: flex;
+        float: right;
+        margin-left: 1.125rem;
+        background-image: url('/wp-content/themes/more/assets/images/down-arrow.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    footer h3 {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .flex.flex-col .menu {
+        margin-left: 1rem;
+    }
+    footer .flex.flex-col .menu-item a {
+        padding: 1rem 0.5rem;
+        font-size: 1.25rem;
+    }
+    .our-tools h2 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+    .our-tools p {
+        font-family: 'Dongle', sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
     }
 }
 

@@ -1,4 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {
+jQuery(document).ready(function ($) {
+    $('.flex.flex-col.text-white').each(function () {
+        var $menuSection = $(this);
+        var $heading = $menuSection.find('h3');
+        var $menu = $menuSection.find('ul');
+        var $downArrow = $heading.find('.down-arrow');
+
+    
+        // Toggle the menu on click
+        $downArrow.click(function () {
+            $menu.slideToggle();
+        });
+    });
     var menu = document.querySelector('#menu');
     var menuToggle = document.getElementById('menu-toggle');
     var navMenuMobile = document.getElementById('menu-mobile');

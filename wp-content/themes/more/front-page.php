@@ -17,20 +17,20 @@ get_header();
                 </ul>
             </div>
         </div>
-        <div class="w-full md:w-2/3">
+        <div class="w-full md:w-2/3 mb-30">
             <?php
             $hero_image_id = get_field('hero');
             $hero_image_url = wp_get_attachment_image_src($hero_image_id, 'full')[0];
             ?>
-            <img src="<?php echo esc_url($hero_image_url); ?>" alt="Hero Image" class="h-auto">
+            <img src="<?php echo esc_url($hero_image_url); ?>" alt="Hero Image" class="h-auto scale-180 sm:scale-100">
         </div>
     </div>
 </div>
 
-<div class="our-tools container py-10 px-4 sm:px-6 md:py-14 mx-auto mb-24">
-    <h2 class="text-3xl sm:text-4xl font-bold text-secondary mb-4 text-center">Tools to Compliment <br> Your Trading</h2>
-    <p class="text-xs sm:text-sm text-tertiary mb-8 text-center font-semibold">Access news & economic calendar, technical indicators & charts, Forex Calculators,<br> educational resources and many more tools to help you excel.</p>
-    <div class="mt-12 flex flex-wrap justify-between space-x-0 sm:space-x-8 text-center">
+<div class="our-tools container py-10 px-0 sm:px-6 md:py-14 sm:mx-auto mb-24">
+    <h2 class="sm:text-4xl text-left font-bold text-secondary mb-4 sm:text-center">Tools to Compliment <br> Your Trading</h2>
+    <p class="text-xs sm:text-sm text-tertiary mb-8 text-left sm:text-center font-semibold">Access news & economic calendar, technical indicators & charts, Forex Calculators,<br> educational resources and many more tools to help you excel.</p>
+    <div class="mt-12 flex flex-wrap justify-center sm:justify-between space-x-0 sm:space-x-8 text-center">
         <div class="feature-div px-2 py-8 sm:px-4 mb-8 md:mb-0 flex flex-col items-center">
             <?php
             $feature_1_image_id = get_field('feature_1_image');
