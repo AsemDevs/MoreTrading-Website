@@ -12,8 +12,8 @@ get_header();
                 <h1 class="font-bold text-secondary text-xl md:text-2xl mb-7">Tighter Spreads & Faster Execution</h1>
                 <p class="text-tertiary leading-none md:leading-9 text-m md:text-lg mt-2 font-bold">With Forex Bros you trade with the best in the biz! With quality execution and some of the best trading conditions in the industry, your trading experience will be none other than epic.</p>
                 <ul class="text-tertiary font-normal leading-none my-7">
-                    <li class="text-lg">No dealing desk or requotes</li>
-                    <li class="text-lg">Commissions as low as $0</li>
+                    <li class="text-m sm:text-lg">No dealing desk or requotes</li>
+                    <li class="text-m sm:text-lg">Commissions as low as $0</li>
                 </ul>
             </div>
         </div>
@@ -30,7 +30,7 @@ get_header();
 <div class="our-tools container py-10 px-4 sm:px-6 md:py-14 mx-auto mb-24">
     <h2 class="text-3xl sm:text-4xl font-bold text-secondary mb-4 text-center">Tools to Compliment <br> Your Trading</h2>
     <p class="text-xs sm:text-sm text-tertiary mb-8 text-center font-semibold">Access news & economic calendar, technical indicators & charts, Forex Calculators,<br> educational resources and many more tools to help you excel.</p>
-    <div class="mt-12 flex flex-wrap justify-between space-x-8 text-center">
+    <div class="mt-12 flex flex-wrap justify-between space-x-0 sm:space-x-8 text-center">
         <div class="feature-div px-2 py-8 sm:px-4 mb-8 md:mb-0 flex flex-col items-center">
             <?php
             $feature_1_image_id = get_field('feature_1_image');

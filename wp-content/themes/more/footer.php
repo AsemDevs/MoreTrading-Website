@@ -88,7 +88,7 @@
             $args = array(
                 'menu' => '9',
                 'container' => '',
-                'menu_class' => 'flex text-m flex-row space-x-4',
+                'menu_class' => 'flex text-m flex-col sm:flex-row space-x-0 sm:space-x-4 text-center',
                 'depth' => 1,
             );
             wp_nav_menu($args);
