@@ -540,6 +540,10 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -616,6 +620,10 @@ video {
   margin-top: 0px;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -646,6 +654,10 @@ video {
 
 .w-48 {
   width: 12rem;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .list-none {
@@ -746,6 +758,10 @@ video {
 
 .fill-current {
   fill: currentColor;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-2 {
@@ -940,6 +956,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:static {
+    position: static;
+  }
+
   .sm\:mt-0 {
     margin-top: 0px;
   }

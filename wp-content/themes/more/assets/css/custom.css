@@ -1,17 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
 * {
     font-family: 'Dongle', sans-serif;
     font-size: 16px;
 }
-h1, h2, h3, h4, h5, h6, p, span, a {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
     font-size: 2rem;
 }
+
 .hero-section h1 {
     line-height: 80%;
 }
+
 header .loginreg a {
     border-radius: 8px;
 }
+
 .hero-section li::before {
     content: url('/wp-content/themes/more/assets/images/bullet.svg');
     color: #6371F4;
@@ -20,18 +33,75 @@ header .loginreg a {
     font-size: 3rem;
     margin-right: 0.5rem;
 }
+
 .our-tools h2 {
     line-height: 58.37px;
 }
+
 .our-tools p {
     font-family: "Inter", sans-serif;
 }
-.our-tools  .feature-div {
+
+.our-tools .feature-div {
     width: 350px;
     max-width: 100%;
 }
+
 footer .menu a,
 footer .disclosure p,
-footer .horizontal-links a{
+footer .horizontal-links a {
     font-size: 1.5rem;
+}
+
+.submenu .menu-item {
+    padding: 1rem 0.5rem;
+}
+
+.submenu .menu-item a {
+    padding: 1rem 0.5rem;
+    font-size: 1.5rem;
+}
+
+.submenu .menu-item:hover {
+    background-color: #6371F4;
+    color: white;
+}
+
+/* Mobile nav menu */
+.nav-menu-mobile {
+    position: fixed;
+    z-index: 100;
+    top: 9rem;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(104.53deg, #EDEBF9 2.98%, rgba(255, 255, 255, 0.4) 101.73%);
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2rem 1rem;
+    justify-content: start;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.nav-menu-mobile.show {
+    transform: translateX(0);
+}
+
+.nav-menu-mobile a:not(.submenu a) {
+    color: #251F6E;
+    font-size: 1.5rem;
+}
+
+.down-arrow {
+    width: 1rem;
+    vertical-align: middle;
+    height: 1rem;
+    margin-left: 1.125rem;
+}
+
+.down-arrow {
+    content: url('/wp-content/themes/more/assets/images/down-arrow.svg');
 }
