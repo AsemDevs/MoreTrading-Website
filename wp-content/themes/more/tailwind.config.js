@@ -9,6 +9,9 @@ module.exports = {
         tertiary: '#848484',    // Customize the tertiary color
         quaternary: '#474747',  // Customize the quaternary color
       },
+      width: {
+        '90vw': '90vw',
+      },
       fontSize: {
         'xs': '1rem',
         'sm': '1.125rem',

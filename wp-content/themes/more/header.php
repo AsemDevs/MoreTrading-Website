@@ -34,7 +34,7 @@
                 </nav>
 
                 <!-- Mobile Menu -->
-                <nav id="menu-mobile" class="nav-menu-mobile hidden md:hidden">
+                <nav id="menu-mobile" class="nav-menu-mobile hidden sm:hidden">
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'header-menu',

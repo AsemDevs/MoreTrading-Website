@@ -38,6 +38,7 @@ npm run watch // to watch the tailwind css
 - Total Width is 1920px
 - The Container width is 1536px
 - The container screen percentage is 80% of the view port.
+- The container screen percentage is 90% of the view port in mobile.
 
 ## must-haves installed plugins and extensions
 
@@ -51,6 +52,7 @@ npm run watch // to watch the tailwind css
 ## Usage
 
 - I will USE ACF plugin to create custom fields for all images in the theme to make it easy for the user to change the images from the admin panel.
+- Our Tools Section is using a scroll snap instead of creating a carousel or slider i used a simple approach to make the features scroll horizontally.
 
 ## Desktop Performance
 
