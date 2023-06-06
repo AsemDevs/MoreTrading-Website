@@ -6,14 +6,16 @@
                     <h3 class="text-primary text-lg sm:text-xl">Trading
                         <span class="down-arrow"></span>
                     </h3>
+
                     <?php
                     $args = array(
-                        'menu' => '3',
+                        'theme_location' => 'trading-menu',
                         'container' => '',
                         'menu_class' => 'ml-4 sm:ml-0 hidden md:block',
                         'depth' => 1,
                     );
                     wp_nav_menu($args);
+
                     ?>
                 </div>
                 <div class="flex flex-col text-white">
@@ -22,7 +24,7 @@
                     </h3>
                     <?php
                     $args = array(
-                        'menu' => '4',
+                        'theme_location' => 'affiliate-menu',
                         'container' => '',
                         'menu_class' => 'ml-4 sm:ml-0 hidden md:block',
                         'depth' => 1,
@@ -36,7 +38,7 @@
                     </h3>
                     <?php
                     $args = array(
-                        'menu' => '5',
+                        'theme_location' => 'help-menu',
                         'container' => '',
                         'menu_class' => 'ml-4 sm:ml-0 hidden md:block',
                         'depth' => 1,
@@ -51,7 +53,7 @@
 
                     <?php
                     $args = array(
-                        'menu' => '6',
+                        'theme_location' => 'learn-menu',
                         'container' => '',
                         'menu_class' => 'ml-4 sm:ml-0 hidden md:block',
                         'depth' => 1,
@@ -66,7 +68,7 @@
 
                     <?php
                     $args = array(
-                        'menu' => '7',
+                        'theme_location' => 'about-menu',
                         'container' => '',
                         'menu_class' => 'ml-4 sm:ml-0 hidden md:block',
                         'depth' => 1,
@@ -81,7 +83,7 @@
 
                     <?php
                     $args = array(
-                        'menu' => '8',
+                        'theme_location' => 'resources-menu',
                         'container' => '',
                         'menu_class' => 'ml-4 sm:ml-0 hidden md:block',
                         'depth' => 1,
@@ -104,7 +106,7 @@
         <div class="horizontal-links mt-4 justify-center flex flex-row text-primary">
             <?php
             $args = array(
-                'menu' => '9',
+                'theme_location' => 'legal-menu',
                 'container' => '',
                 'menu_class' => 'flex text-m flex-col sm:flex-row space-x-0 sm:space-x-4 text-center',
                 'depth' => 1,

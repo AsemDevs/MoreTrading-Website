@@ -997,6 +997,10 @@ video {
     flex-direction: row;
   }
 
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
   .sm\:justify-between {
     justify-content: space-between;
   }

@@ -38,7 +38,7 @@ get_header();
                     </div>
         <div class="feature-div px-2 py-8 sm:px-4 mb-8 md:mb-0 flex flex-col items-center">
             <?php
-            $feature_1_image_id = get_field('feature_1_image');
+            $feature_1_image_id = esc_html(get_field('feature_1_image'));
             $feature_1_image_url = wp_get_attachment_image_src($feature_1_image_id, 'full')[0];
             ?>
             <img src="<?php echo esc_url($feature_1_image_url); ?>" alt="Feature 1" class="mb-4">
@@ -48,7 +48,7 @@ get_header();
         </div>
         <div class="feature-div px-2 py-8 sm:px-4 mb-8 md:mb-0 flex flex-col items-center border-4 border-solid border-primary rounded-3xl">
             <?php
-            $feature_2_image_id = get_field('feature_2_image');
+            $feature_2_image_id = esc_html(get_field('feature_2_image'));
             $feature_2_image_url = wp_get_attachment_image_src($feature_2_image_id, 'full')[0];
             ?>
             <img src="<?php echo esc_url($feature_2_image_url); ?>" alt="Feature 2" class="mb-4">
@@ -57,7 +57,7 @@ get_header();
         </div>
         <div class="feature-div px-2 py-8 sm:px-4 mb-8 md:mb-0 flex flex-col items-center">
             <?php
-            $feature_3_image_id = get_field('feature_3_image');
+            $feature_3_image_id = esc_html(get_field('feature_3_image'));
             $feature_3_image_url = wp_get_attachment_image_src($feature_3_image_id, 'full')[0];
             ?>
             <img src="<?php echo esc_url($feature_3_image_url); ?>" alt="Feature 3" class="mb-4">

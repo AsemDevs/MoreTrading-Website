@@ -17,8 +17,13 @@ function register_my_menus()
     register_nav_menus(
         array(
             'header-menu' => __('Header Menu'),
-            'footer-menu' => __('Footer Menu'),
-            'extra-menu' => __('Extra Menu')
+            'trading-menu' => __('Trading Menu'),
+            'affiliate-menu' => __('Affiliate Menu'),
+            'help-menu' => __('Help Menu'),
+            'learn-menu' => __('Learn Menu'),
+            'about-menu' => __('About Menu'),
+            'resources-menu' => __('Resources Menu'),
+            'legal-menu' => __('Legal Menu'),
         )
     );
 }
