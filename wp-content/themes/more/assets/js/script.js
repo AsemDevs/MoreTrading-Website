@@ -30,7 +30,13 @@ jQuery(document).ready(function ($) {
             e.stopPropagation();
 
             var $submenu = $menuItem.children('.submenu');
-            $submenu.slideToggle();
+            $submenu.slideToggle(function () {
+                if ($(this).is(':visible')) {
+                    $menuItem.addClass('active');
+                } else {
+                    $menuItem.removeClass('active');
+                }
+            });
         });
     });
 
@@ -66,5 +72,4 @@ jQuery(document).ready(function ($) {
             }
         });
     });
-
 });
