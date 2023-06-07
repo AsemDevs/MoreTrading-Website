@@ -6,7 +6,7 @@ add_theme_support('post-thumbnails');
 
 function theme_enqueue_styles()
 {
-    wp_enqueue_style('theme-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
+    wp_enqueue_style('theme-style', get_template_directory_uri() . '/assets/css/output.css', array(), wp_get_theme()->get('Version'));
     wp_enqueue_style('custom-style', get_template_directory_uri() . '/assets/css/custom.css', array(), wp_get_theme()->get('Version'));
     wp_enqueue_script('theme-script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), wp_get_theme()->get('Version'), true);
 }

@@ -1,9 +1,7 @@
 jQuery(document).ready(function ($) {
     // Dropdown functionality for desktop #menu
     $('#menu .menu-item-has-children').hover(function () {
-        $(this).find('.submenu').first().stop(true, true).slideDown();
-    }, function () {
-        $(this).find('.submenu').first().stop(true, true).slideUp();
+        $(this).find('.submenu').toggle();
     });
 
     // Toggle functionality for menuToggle button
@@ -12,7 +10,7 @@ jQuery(document).ready(function ($) {
     });
 
     // Adding down arrows and toggle functionality for top-level menu items
-    var $menuItems = $('li.menu-item-has-children').filter(function() {
+    var $menuItems = $('li.menu-item-has-children').filter(function () {
         return !$(this).parents('.submenu').length;  // only keep top-level menu items
     });
 
@@ -36,7 +34,7 @@ jQuery(document).ready(function ($) {
         });
     });
 
-$('.flex.flex-col.text-white').each(function () {
+    $('.flex.flex-col.text-white').each(function () {
         var $menuSection = $(this);
         var $heading = $menuSection.find('h3');
         var $menu = $menuSection.find('ul');
@@ -58,6 +56,15 @@ $('.flex.flex-col.text-white').each(function () {
         // Toggle the menu on click
         $downArrow.on('click', function () {
             $submenu.slideToggle();
+
+            if ($submenu.is(':visible')) {
+                // The submenu is open, so add the class to the parent menu item
+                $(this).parent().addClass('primary-color');
+            } else {
+                // The submenu is closed, so remove the class from the parent menu item
+                $(this).parent().removeClass('primary-color');
+            }
         });
     });
+
 });

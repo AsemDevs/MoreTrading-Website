@@ -4,6 +4,7 @@
 !README.md
 !docker-compose.yaml
 !database/
+!screenshots/
 !.gitignore
 
 # Ignore everything in the "wp-content" directory, except:
