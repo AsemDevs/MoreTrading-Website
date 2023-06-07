@@ -130,15 +130,29 @@ li.menu-item-has-children>a {
 footer .flex.flex-col .menu-item a {
     font-size: 1.5rem;
 }
-#menu-header-menu-1 .menu-item.active > a {
+
+#menu-header-menu-1 .menu-item.active>a {
     color: #6371F4 !important;
 }
 
+@media (max-width: 998px) {
+
+    footer .down-arrow,
+    #menu-mobile .down-arrow {
+        width: 1rem;
+        margin-top: 1rem;
+        height: 1rem;
+        display: flex;
+        float: right;
+        margin-left: 1.125rem;
+        background-image: url('/wp-content/themes/more/assets/images/down-arrow.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}
 
 @media (max-width: 768px) {
-    .container {
-        min-width: 90vw !important;
-    }
 
     .submenu {
         background: none;
@@ -150,18 +164,6 @@ footer .flex.flex-col .menu-item a {
         top: 0;
         background-color: white;
         z-index: 10000;
-    }
-
-    .down-arrow {
-        width: 1rem;
-        margin-top: 1rem;
-        height: 1rem;
-        display: flex;
-        float: right;
-        margin-left: 1.125rem;
-        background-image: url('/wp-content/themes/more/assets/images/down-arrow.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
     }
 
     footer h3 {
@@ -190,7 +192,7 @@ footer .flex.flex-col .menu-item a {
     }
 
     .hero-section img {
-        scale: 1.8;
+        scale: 1.7;
     }
 
     .our-tools .flex {
@@ -211,6 +213,7 @@ footer .flex.flex-col .menu-item a {
     li.menu-item-has-children>a {
         padding: 0;
     }
+
     .current-menu-item>a {
         border: none
     }

@@ -1,4 +1,4 @@
-<div class="our-tools container py-10 px-0 sm:px-6 md:py-14 sm:mx-auto mb-24">
+<div class="our-tools lg:container py-10 px-4 sm:px-6 md:py-14 sm:mx-auto mb-24">
     <h2 class="sm:text-4xl text-left font-bold text-secondary mb-4 sm:text-center">Tools to Compliment <br> Your Trading</h2>
     <p class="text-xs sm:text-sm text-tertiary mb-8 text-left sm:text-center font-semibold">Access news & economic calendar, technical indicators & charts, Forex Calculators,<br> educational resources and many more tools to help you excel.</p>
     <div class="mt-12 flex flex-nowrap justify-center sm:justify-between space-x-0 sm:space-x-8 text-center overflow-auto sm:overflow-visible scrollbar-hide snap-x">

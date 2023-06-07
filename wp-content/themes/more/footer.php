@@ -1,7 +1,7 @@
-<footer class="bg-black text-secondary">
-    <div class="container mx-auto py-4">
+<footer class="bg-black text-secondary px-4 sm:px-0">
+    <div class="container mx-auto pb-20 sm:pb-8 pt-5 sm:pt-2">
         <div class="sm:flex sm:mt-8">
-            <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
+            <div class="sm:mt-0 sm:w-full sm:px-8 flex flex-col lg:flex-row justify-between">
                 <div class="flex flex-col text-white">
                     <h3 class="text-primary text-lg sm:text-xl">Trading
                         <span class="down-arrow"></span>
@@ -11,7 +11,7 @@
                     $args = array(
                         'theme_location' => 'trading-menu',
                         'container' => '',
-                        'menu_class' => 'ml-4 sm:ml-0 hidden md:block',
+                        'menu_class' => 'ml-4 sm:ml-0 hidden lg:block',
                         'depth' => 1,
                     );
                     wp_nav_menu($args);
@@ -26,7 +26,7 @@
                     $args = array(
                         'theme_location' => 'affiliate-menu',
                         'container' => '',
-                        'menu_class' => 'ml-4 sm:ml-0 hidden md:block',
+                        'menu_class' => 'ml-4 sm:ml-0 hidden lg:block',
                         'depth' => 1,
                     );
                     wp_nav_menu($args);
@@ -40,7 +40,7 @@
                     $args = array(
                         'theme_location' => 'help-menu',
                         'container' => '',
-                        'menu_class' => 'ml-4 sm:ml-0 hidden md:block',
+                        'menu_class' => 'ml-4 sm:ml-0 hidden lg:block',
                         'depth' => 1,
                     );
                     wp_nav_menu($args);
@@ -55,7 +55,7 @@
                     $args = array(
                         'theme_location' => 'learn-menu',
                         'container' => '',
-                        'menu_class' => 'ml-4 sm:ml-0 hidden md:block',
+                        'menu_class' => 'ml-4 sm:ml-0 hidden lg:block',
                         'depth' => 1,
                     );
                     wp_nav_menu($args);
@@ -70,7 +70,7 @@
                     $args = array(
                         'theme_location' => 'about-menu',
                         'container' => '',
-                        'menu_class' => 'ml-4 sm:ml-0 hidden md:block',
+                        'menu_class' => 'ml-4 sm:ml-0 hidden lg:block',
                         'depth' => 1,
                     );
                     wp_nav_menu($args);
@@ -85,7 +85,7 @@
                     $args = array(
                         'theme_location' => 'resources-menu',
                         'container' => '',
-                        'menu_class' => 'ml-4 sm:ml-0 hidden md:block',
+                        'menu_class' => 'ml-4 sm:ml-0 hidden lg:block',
                         'depth' => 1,
                     );
                     wp_nav_menu($args);
@@ -100,7 +100,7 @@
             <a href="#" class="mx-2 hover:brightness-125"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.svg" alt="Linkedin"></a>
         </div>
         <div class="disclosure mt-4 font-normal leading-9">
-            <p class="text-white text-sm sm:text-m">RISK DISCLOSURE:*The services and information provided by The Bored Traders Club are not directed at citizens or residents in the USA. Additionally, they are not intended for distribution to or used by any individual in any jurisdiction where such distribution would be contrary to local law or regulation.</p>
+            <p class="text-white text-sm sm:text-m sm:px-4">RISK DISCLOSURE:*The services and information provided by The Bored Traders Club are not directed at citizens or residents in the USA. Additionally, they are not intended for distribution to or used by any individual in any jurisdiction where such distribution would be contrary to local law or regulation.</p>
         </div>
 
         <div class="horizontal-links mt-4 justify-center flex flex-row text-primary">

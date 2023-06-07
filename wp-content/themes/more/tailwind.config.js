@@ -34,10 +34,11 @@ module.exports = {
       container: {
         center: true,
         screens: {
-          sm: "100%",
-          md: "100%",
-          lg: "80vw",
-          xl: "80vw",
+          sm: '640px',
+          md: '868px',
+          lg: '1024px',
+          xl: '1280px',
+          '2xl': '1380px',
         },
       },
     },

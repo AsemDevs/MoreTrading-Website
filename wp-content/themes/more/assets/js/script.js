@@ -13,6 +13,7 @@ jQuery(document).ready(function ($) {
     var $menuItems = $('li.menu-item-has-children').filter(function () {
         return !$(this).parents('.submenu').length;  // only keep top-level menu items
     });
+    
 
     $menuItems.each(function () {
         var $menuItem = $(this);

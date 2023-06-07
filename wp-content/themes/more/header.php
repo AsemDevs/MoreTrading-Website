@@ -12,21 +12,21 @@
 <body <?php body_class(); ?>>
 
     <?php wp_body_open(); ?>
-    <header class="sm:container px-4 sm:px-0 md:container mx-auto">
-        <div class="py-3 flex justify-between items-center">
-            <div>
+    <header class="px-4 lg:px-0 lg:container mx-auto">
+        <div class="py-3 flex justify-between align-center sm:items-end lg:items-center">
+            <div class="sm:hidden md:block">
                 <a href="<?php echo site_url(); ?>" class="font-semibold text-gray-800 flex items-center">
                     <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.svg' ?>" alt="More Logo" class="w-22 h-auto mr-2" />
-                    <span class="hidden md:inline">MORE</span> <!-- Hide 'MORE' text on smaller screens -->
+                    <span class="hidden sm:inline logo">MORE</span> <!-- Hide 'MORE' text on smaller screens -->
                 </a>
             </div>
-            <div class="flex items-center">
+            <div class="flex items:start md:items-center sm:justify-center lg:justify-end flex-wrap">
                 <nav id="menu" class="nav-menu hidden md:flex space-x-10 mr-8 text-secondary">
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'header-menu',
                         'container' => false,
-                        'menu_class' => 'flex flex-col md:flex-row space-x-10 list-none',
+                        'menu_class' => 'flex flex-col sm:flex-row space-y-4 sm:space-x-8 sm:space-y-0 list-none',
                         'fallback_cb' => false, // Stops WordPress from generating its own list in case the menu does not exist
                         'walker' => new Tailwind_Walker_Nav_Menu()
                     ));
@@ -34,7 +34,7 @@
                 </nav>
 
                 <!-- Mobile Menu -->
-                <nav id="menu-mobile" class="nav-menu-mobile sm:hidden">
+                <nav id="menu-mobile" class="nav-menu-mobile hidden sm:hidden">
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'header-menu',
