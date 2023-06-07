@@ -136,7 +136,7 @@ This project presents a landing page for a trading website, crafted with the com
 
 - Mobile View:
 
-  ![Mobile View](./screenshots/performance-mobile.png)
+  ![Mobile View](./screenshots/mobile.png)
 
 ## Performance Scores
 
