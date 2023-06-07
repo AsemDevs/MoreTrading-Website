@@ -85,6 +85,7 @@ li.menu-item-has-children .submenu {
     height: 100vh;
     background: linear-gradient(104.53deg, #EDEBF9 2.98%, rgba(255, 255, 255, 0.4) 101.73%);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
     align-items: start;

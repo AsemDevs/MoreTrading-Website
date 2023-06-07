@@ -21,6 +21,24 @@ This project presents a landing page for a trading website, crafted with the com
 - MySQL: Our database of choice.
 - Docker: Our containerization platform.
 
+## Features
+
+1. **Fallback for Custom Fields:** The theme implements a fallback mechanism for custom fields, especially for images. If a custom field is not set or left empty in the admin panel, the field will default to using a predefined image located in the theme's assets directory. This ensures there are no blank or missing image issues in the live view.
+
+2. **Reusable Sections Using Template Parts:** In order to maintain consistency across different pages and to increase code efficiency and maintainability, some sections of the pages are created as reusable blocks using WordPress's template part functionality. This allows for a modular design of page sections. Any changes made to the template part are reflected across all pages using that part.
+
+3. **Advanced Custom Fields (ACF) Plugin:** This plugin is used extensively to create customizable fields for the theme. It enables admins to change images and content from the admin panel, enhancing the customization and usability of the website.
+
+4. **Scroll Snap in "Our Tools" Section:** The "Our Tools" section uses a scroll snap feature for an intuitive user experience. This allows users to smoothly scroll through the different features of the website.
+
+5. **Tailwind CSS for Custom Designs:** Tailwind CSS, a utility-first CSS framework, is used to create custom designs. This makes the website look unique and professionally crafted, providing a great user experience.
+
+6. **Mobile-Responsive Design:** The website design is fully responsive, ensuring a seamless experience across various device screen sizes. This includes proper alignment and scaling of elements based on the viewport size.
+
+7. **Performance-Optimized:** The theme is optimized for performance, resulting in fast page load times and a smooth user experience. This is achieved through efficient code practices and the use of performance optimization plugins like W3 Total Cache.
+
+8. **SEO-Ready:** With the integration of the Yoast SEO plugin, the website is SEO-ready. This plugin helps to improve the website's SEO, increasing its visibility on search engine results pages.
+
 ## Installation
 
 1. Start Docker containers using the following command:
