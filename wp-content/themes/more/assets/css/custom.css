@@ -135,12 +135,8 @@ footer .flex.flex-col .menu-item a {
 #menu-header-menu-1 .menu-item.active>a {
     color: #6371F4 !important;
 }
-.menu-item-has-children:last-child .submenu {
-    right: 0;
-    margin-right: 1rem;
-}
 
-@media (max-width: 998px) {
+@media (max-width: 1024px) {
 
     footer .down-arrow,
     #menu-mobile .down-arrow {
@@ -156,6 +152,10 @@ footer .flex.flex-col .menu-item a {
     }
     .nav-menu-mobile {
         top: 155px;
+    }
+    .menu-item-has-children:last-child .submenu {
+        right: 0;
+        margin-right: 1rem;
     }
 }
 @media (max-width: 430px) {
