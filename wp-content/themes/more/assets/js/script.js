@@ -1,8 +1,19 @@
 jQuery(document).ready(function ($) {
     // Dropdown functionality for desktop #menu
-    $('#menu .menu-item-has-children').hover(function () {
-        $(this).find('.submenu').toggle();
-    });
+    var isTouchDevice = 'ontouchstart' in document.documentElement;
+
+    if (isTouchDevice) {
+        // Dropdown functionality for touch devices
+        $('#menu .menu-item-has-children > a .down-arrow').on('click', function (e) {
+            e.preventDefault(); // prevent the page from navigating
+            $(this).next('.submenu').toggle();
+        });
+    } else {
+        // Dropdown functionality for non-touch devices
+        $('#menu .menu-item-has-children').hover(function () {
+            $(this).find('.submenu').toggle();
+        });
+    }
 
     // Toggle functionality for menuToggle button
     $('#menu-toggle').on('click', function () {

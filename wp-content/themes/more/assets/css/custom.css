@@ -29,7 +29,7 @@ header .loginreg a {
     content: url('/wp-content/themes/more/assets/images/bullet.svg');
     color: #6371F4;
     display: inline-block;
-    vertical-align: initial;
+    vertical-align: middle;
     font-size: 3rem;
     margin-right: 0.5rem;
 }
@@ -134,6 +134,10 @@ footer .flex.flex-col .menu-item a {
 
 #menu-header-menu-1 .menu-item.active>a {
     color: #6371F4 !important;
+}
+.menu-item-has-children:last-child .submenu {
+    right: 0;
+    margin-right: 1rem;
 }
 
 @media (max-width: 998px) {
