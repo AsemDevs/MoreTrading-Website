@@ -830,6 +830,10 @@ video {
   padding-top: 1.25rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1310,6 +1314,10 @@ video {
     display: block;
   }
 
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:hidden {
     display: none;
   }
@@ -1345,6 +1353,10 @@ video {
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .lg\:pr-4 {
+    padding-right: 1rem;
   }
 
   .lg\:shadow-lg {

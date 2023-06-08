@@ -83,6 +83,7 @@ li.menu-item-has-children .submenu {
     right: 0;
     width: 100%;
     height: 100vh;
+    background: -webkit-linear-gradient(104.53deg, #EDEBF9 2.98%, rgba(255, 255, 255, 0.4) 101.73%);
     background: linear-gradient(104.53deg, #EDEBF9 2.98%, rgba(255, 255, 255, 0.4) 101.73%);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -149,11 +150,21 @@ footer .flex.flex-col .menu-item a {
         background-size: contain;
         background-repeat: no-repeat;
     }
-
+    .nav-menu-mobile {
+        top: 155px;
+    }
+}
+@media (max-width: 430px) {
+    .nav-menu-mobile {
+        top: 100%;
+    }
 }
 
 @media (max-width: 768px) {
 
+    .nav-menu-mobile {
+        top: 120px;
+    }
     .submenu {
         background: none;
         position: relative;
