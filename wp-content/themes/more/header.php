@@ -14,7 +14,7 @@
     <?php wp_body_open(); ?>
     <header class="px-4 lg:px-0 lg:container mx-auto">
         <div class="py-3 flex justify-between align-center">
-            <div class="sm:hidden md:block">
+            <div>
                 <a href="<?php echo site_url(); ?>" class="font-semibold text-gray-800 flex items-center">
                     <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.svg' ?>" alt="More Logo" class="w-22 h-auto mr-2" />
                     <span class="hidden sm:inline logo">MORE</span> <!-- Hide 'MORE' text on smaller screens -->

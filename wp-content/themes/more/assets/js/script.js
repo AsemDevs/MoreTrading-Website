@@ -2,29 +2,10 @@ jQuery(document).ready(function ($) {
     // Dropdown functionality for desktop #menu
     var isTouchDevice = 'ontouchstart' in document.documentElement;
 
-    if (isTouchDevice) {
-        // Dropdown functionality for touch devices
-        $('#menu .menu-item-has-children > a .down-arrow').on('click', function (e) {
-            e.preventDefault(); // prevent the page from navigating
-            $(this).next('.submenu').toggle();
-        });
-    } else {
-        // Dropdown functionality for non-touch devices
-        $('#menu .menu-item-has-children').hover(function () {
-            $(this).find('.submenu').toggle();
-        });
-    }
-
-    // Toggle functionality for menuToggle button
-    $('#menu-toggle').on('click', function () {
-        $('#menu-mobile').toggleClass('show');
-    });
-
     // Adding down arrows and toggle functionality for top-level menu items
     var $menuItems = $('li.menu-item-has-children').filter(function () {
         return !$(this).parents('.submenu').length;  // only keep top-level menu items
     });
-
 
     $menuItems.each(function () {
         var $menuItem = $(this);
@@ -42,14 +23,30 @@ jQuery(document).ready(function ($) {
             e.stopPropagation();
 
             var $submenu = $menuItem.children('.submenu');
+            // Close any other open submenus
+            $('.submenu').not($submenu).slideUp();
+            
+            // Open or close this submenu
             $submenu.slideToggle(function () {
-                if ($(this).is(':visible')) {
+                if ($submenu.is(':visible')) {
                     $menuItem.addClass('active');
                 } else {
                     $menuItem.removeClass('active');
                 }
             });
         });
+    });
+
+    if (!isTouchDevice) {
+        // Dropdown functionality for non-touch devices
+        $('#menu .menu-item-has-children').hover(function () {
+            $(this).find('.submenu').toggle();
+        });
+    }
+
+    // Toggle functionality for menuToggle button
+    $('#menu-toggle').on('click', function () {
+        $('#menu-mobile').toggleClass('show');
     });
 
     $('.flex.flex-col.text-white').each(function () {

@@ -35,7 +35,7 @@ class Tailwind_Walker_Nav_Menu extends Walker_Nav_Menu
     function start_lvl(&$output, $depth = 0, $args = array())
     {
         $indent = str_repeat("\t", $depth);
-        $output .= "\n$indent<ul class=\"submenu lg:absolute lg:z-50 lg:hidden lg:group-hover:block sm:text-sm lg:mt-0 lg:w-64 lg:rounded-md lg:shadow-lg lg:bg-white lg:ring-1 lg:ring-black lg:ring-opacity-5 focus:outline-none\">\n";
+        $output .= "\n$indent<ul class=\"submenu lg:absolute lg:z-50 sm:text-sm lg:mt-0 lg:w-64 lg:rounded-md lg:shadow-lg lg:bg-white lg:ring-1 lg:ring-black lg:ring-opacity-5 focus:outline-none\">\n";
     }
 
 }

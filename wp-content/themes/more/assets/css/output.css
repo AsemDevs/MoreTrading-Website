@@ -1320,6 +1320,10 @@ video {
     position: absolute;
   }
 
+  .lg\:relative {
+    position: relative;
+  }
+
   .lg\:z-50 {
     z-index: 50;
   }
@@ -1405,5 +1409,15 @@ video {
 
   .group:hover .lg\:group-hover\:block {
     display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:absolute {
+    position: absolute;
+  }
+
+  .xl\:z-50 {
+    z-index: 50;
   }
 }
