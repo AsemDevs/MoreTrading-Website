@@ -12,7 +12,7 @@
                 $feature_1_image_url = get_template_directory_uri() . '/assets/images/economic.png';
             }
             ?>
-            <img src="<?php echo esc_url($feature_1_image_url); ?>" alt="Feature 1" class="mb-4">
+            <img src="<?php echo esc_url($feature_1_image_url); ?>" alt="Feature 1" class="mb-4 responsive">
 
             <h3 class="text-lg sm:text-xl font-bold text-secondary mb-2">Economic Calendar</h3>
             <p class="text-xs sm:text-sm text-quaternary px-4 sm:px-4 leading-5 sm:leading-6">Access all major events & economic news that impact financial markets.</p>
@@ -27,7 +27,7 @@
                 $feature_2_image_url = get_template_directory_uri() . '/assets/images/trading.png';
             }
             ?>
-            <img src="<?php echo esc_url($feature_2_image_url); ?>" alt="Feature 2" class="mb-4">
+            <img src="<?php echo esc_url($feature_2_image_url); ?>" alt="Feature 2" class="mb-4 responsive">
             <h3 class="text-lg sm:text-xl font-bold text-secondary mb-2">Trading Calculators</h3>
             <p class="text-xs sm:text-sm text-quaternary px-4 sm:px-4 leading-5 sm:leading-6">Make trading calculations in real-time & forecast the potential growth of your account.</p>
         </div>
@@ -41,7 +41,7 @@
                 $feature_3_image_url = get_template_directory_uri() . '/assets/images/educational.png';
             }
             ?>
-            <img src="<?php echo esc_url($feature_3_image_url); ?>" alt="Feature 3" class="mb-4">
+            <img src="<?php echo esc_url($feature_3_image_url); ?>" alt="Feature 3" class="mb-4 responsive">
             <h3 class="text-lg sm:text-xl font-bold text-secondary mb-2">Educational Resources</h3>
             <p class="text-xs sm:text-sm text-quaternary px-4 sm:px-4 leading-5 sm:leading-6">From top tips & trading psychology to more ways to earn, we make learning more fun.</p>
         </div>

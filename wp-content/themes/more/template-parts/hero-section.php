@@ -18,7 +18,7 @@
                 $hero_image_url = get_template_directory_uri() . '/assets/images/hero-header.png';  // Path to your default image.
             }
             ?>
-            <img src="<?php echo esc_url($hero_image_url); ?>" alt="Hero Image" class="h-auto">
+            <img src="<?php echo esc_url($hero_image_url); ?>" alt="Hero Image" class="h-auto responsive">
         </div>
 
     </div>

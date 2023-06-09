@@ -1,5 +1,5 @@
 <footer class="bg-black text-secondary px-4 sm:px-0">
-    <div class="container mx-auto pb-20 sm:pb-8 pt-5 sm:pt-2">
+    <div class="lg:container mx-auto pb-20 sm:pb-8 pt-5 sm:pt-2">
         <div class="sm:flex sm:mt-8">
             <div class="sm:mt-0 sm:w-full sm:px-8 flex flex-col lg:flex-row justify-between">
                 <div class="flex flex-col text-white">
