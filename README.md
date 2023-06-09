@@ -7,6 +7,8 @@ This project presents a landing page for a trading website, crafted with the com
 - Username: `admin`
 - Password: `*jx5SQNfdmDZgkK%h686C#jG`
 
+> **Important**: You can preview on the live staging instance of the theme at [https://staging4.asemhamdi.com/](https://staging4.asemhamdi.com/)
+
 ## Requirements
 
 - Docker
