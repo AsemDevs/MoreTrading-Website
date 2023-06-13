@@ -8,6 +8,7 @@ This project presents a landing page for a trading website, crafted with the com
 - Password: `*jx5SQNfdmDZgkK%h686C#jG`
 
 > **Important**: You can preview the live staging instance of the theme at [https://staging4.asemhamdi.com/](https://staging4.asemhamdi.com/)
+> **Important**: New Page is added (On dev branch) and built with gutnberg blocks, and Tailwind CSS, the page has slug `guntberg-page`. preview at [Gutnberg Page](https://staging4.asemhamdi.com/guntberg-page/)
 
 ## Requirements
 
