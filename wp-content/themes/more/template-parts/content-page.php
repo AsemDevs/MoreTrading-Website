@@ -1,12 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('flex flex-col bg-white rounded-lg shadow-lg overflow-hidden'); ?>>
 
-    <header class="flex items-center justify-center p-6">
-        <div class="text-lg leading-6 font-medium text-gray-900">
-            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-        </div>
-    </header>
-
-    <div class="entry-content flex-grow p-6">
+    <div class="entry-content">
         <?php
             the_content();
             wp_link_pages( array(

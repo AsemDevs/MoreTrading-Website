@@ -16,7 +16,9 @@ span,
 a {
     font-size: 2rem;
 }
-
+span.logo {
+    font-size: 3.25rem;
+}
 img.responsive {
     width: 100%;
     height: auto;
@@ -142,7 +144,9 @@ footer .flex.flex-col .menu-item a {
 }
 
 @media (max-width: 1024px) {
-
+    span.logo {
+        font-size: 2rem;
+    }
     footer .down-arrow,
     #menu-mobile .down-arrow {
         width: 1rem;
@@ -173,7 +177,6 @@ footer .flex.flex-col .menu-item a {
 }
 
 @media (max-width: 768px) {
-
     .nav-menu-mobile {
         top: 120px;
     }
@@ -241,6 +244,10 @@ footer .flex.flex-col .menu-item a {
     .current-menu-item>a {
         border: none
     }
+    .wp-block-group.our-tools {
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+    }
 }
 
 #menu-mobile .menu-item:not(.menu-item-has-children .submenu .menu-item) {
@@ -275,4 +282,26 @@ footer .flex.flex-col .menu-item a {
 
 .snap-x>* {
     scroll-snap-align: start;
+}
+
+.our-tools .wp-block-columns {
+    flex-wrap: nowrap !important;
+}
+
+.our-tools .body .is-layout-flex {
+    flex-wrap: nowrap !important;
+}
+
+.our-tools .wp-container-12.wp-container-12,
+.our-tools.wp-container-10.wp-container-10 {
+    flex-direction: row;
+}
+
+@media (max-width: 781px) {
+    .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column {
+        flex-basis: initial !important;
+    }
+}
+.our-tools + p {
+    margin-top: 2rem;
 }
