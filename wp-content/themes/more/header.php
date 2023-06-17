@@ -46,8 +46,8 @@
                     ?>
                 </nav>
                 <div class="flex items-center space-x-3 loginreg">
-                    <a href="#" class="font-medium text-white text-sm md:text-m rounded bg-primary hover:bg-gray-700 px-3 md:px-7 py-0 md:py-2">Log in</a>
-                    <a href="#" class="font-medium text-white text-sm md:text-m bg-primary rounded hover:bg-gray-700 px-3 md:px-7 py-0 md:py-2">Sign Up</a>
+                    <?php wp_loginout(home_url()); ?>
+                    <a href="<?php echo wp_registration_url(); ?>" class="font-medium text-white text-sm md:text-m bg-primary rounded hover:bg-gray-700 px-3 md:px-7 py-0 md:py-2">Sign Up</a>
                 </div>
             </div>
             <div class="flex lg:hidden">

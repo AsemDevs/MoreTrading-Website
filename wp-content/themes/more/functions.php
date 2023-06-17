@@ -39,3 +39,10 @@ class Tailwind_Walker_Nav_Menu extends Walker_Nav_Menu
     }
 
 }
+
+function add_loginout_class($output) {
+    $class_to_add = 'font-medium text-white text-sm md:text-m rounded bg-primary hover:bg-gray-700 px-3 md:px-7 py-0 md:py-2';
+    $output = str_replace('<a ', '<a class="'.$class_to_add.'" ', $output);
+    return $output;
+}
+add_filter('loginout','add_loginout_class');
